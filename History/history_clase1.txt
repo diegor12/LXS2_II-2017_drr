@@ -1,0 +1,293 @@
+    1  apt-cache search chrome
+    2  apt-cache search google'chrome
+    3  apt-cache search google-chrome
+    4  apt-cache search googlechrome
+    5  apt-cache search google}
+    6  apt-cache search google
+    7  apt-cache search virtualbox
+    8  cd Downloads/
+    9  ls
+   10  su - soporte
+   11  type git
+   12  ls
+   13  cd Documents/
+   14  mkdir LXS2_II-2017_drr
+   15  ls
+   16  cd LXS2_II-2017_drr/
+   17  git init
+   18  tree
+   19  tree -a
+   20  sudo - root
+   21  su - soporte
+   22  tree
+   23  tree -a
+   24  ls -la
+   25  git config --global user.name "Diego Retana"
+   26  git config --global user.email "ludireta@hotmail.com"
+   27  vim 
+   28  vim ~/.gitconfig 
+   29  vim .gitignore
+   30  mkdir src
+   31  mkdir misc
+   32  mkdir logs
+   33  mkdir data
+   34  tree -a
+   35  touch {misc,src,logs}/file1
+   36  tree -a
+   37  git status 
+   38  touch data/file1
+   39  tree
+   40  git add --all
+   41  git s
+   42  git status 
+   43  git commit -m "Inicio del repo"
+   44  git status 
+   45  touch data/file2
+   46  git status 
+   47  last
+   48  last > misc/ultimo-acceso.log
+   49  head dmesg >> data/file1
+   50  dmesg | head >> data/file1
+   51  ls /data
+   52  ls data/
+   53  git status 
+   54  git add data/file1
+   55  git add data/file2
+   56  git status 
+   57  git commit -m "2 nuevos achivos"
+   58  git log
+   59  git remote add origin https://github.com/diegor12/LXS2_II-2017_drr.git
+   60  git remote -v
+   61  git push -u origin master
+   62  history > data/file2
+   63  cat data/file2
+   64  git status 
+   65  git add data/file2
+   66  git commit -m "History"
+   67  git log
+   68  git remote add origin https://github.com/diegor12/LXS2_II-2017_drr.git
+   69  git remote add prueba https://github.com/diegor12/LXS2_II-2017_drr.git
+   70  git push -u prueba master
+   71  git pull origin master
+   72  git log
+   73  man nmcli
+   74  nmcli dev list | grep IP4
+   75  nmcli dev list|grep IP4
+   76  nmcli dev list
+   77  ifconfig
+   78  ssh 10.124.18.229
+   79  su soporte 
+   80  ls
+   81  cd
+   82  mkdir Academia
+   83  cd Academia/
+   84  git clone https://github.com/diegor12/LXS2_II-2017_drr.git mi-repo
+   85  ls
+   86  cd mi-repo/
+   87  tree
+   88  ifconfig >> misc/file1
+   89  git status
+   90  git add misc/file1 
+   91  git commit -m "Modificacion desde la casa"
+   92  git status 
+   93  git push -u origin master
+   94  cd..
+   95  cd ..
+   96  cd
+   97  VAR=1
+   98  export VAR
+   99  echo $VAR
+  100  unset VAR
+  101  echo $VAR
+  102  echo $TZ
+  103  echo $PS1
+  104  ps1=$PS1
+  105  echo $ps1
+  106  ps1="lineadecomandos>"
+  107  echo $PS1
+  108  echo $ps1
+  109  unset ps1
+  110  echo $ps1
+  111  ps1=$PS1
+  112  PS1="lineadecomandos>"
+  113  ls
+  114  PS1=$ps1
+  115  cd Documents/
+  116  mkdir History
+  117  rd -r History/
+  118  rm -r History/
+  119  ls
+  120  cd LXS2_II-2017_drr/
+  121  mkdir History
+  122  alias STm='date +%Y%m%d'
+  123  STm
+  124  var_time=`STm`
+  125  history > history/history-$var_time
+  126  history > History/history-$var_time
+  127  tree
+  128  history > History/history-`STm`.log
+  129  tree
+  130  alias STm='date +%Y%m%d_%H%M'
+  131  history > History/history-`STm`.log
+  132  tree
+  133  alias -p
+  134  alias
+  135  STm
+  136  \ls -la
+  137  ls -la
+  138  `ls -la`
+  139  reportes () { cd /usr/share/doc; echo "Reporte del dia `date +%Y-%m-%d`" > tmp/reporte; date >> /tmp/reporte; pwd >> /tmp/reporte; du -sh . >> /tmp/reporte; }
+  140  reportes
+  141  reportes () { cd /usr/share/doc; echo "Reporte del dia `date +%Y-%m-%d`" > /tmp/reporte; date >> /tmp/reporte; pwd >> /tmp/reporte; du -sh . >> /tmp/reporte; }
+  142  reportes
+  143  cat /tmp/reporte 
+  144  cd
+  145  cd Documents/
+  146  cd L
+  147  cd LXS2_II-2017_drr/}
+  148  cd LXS2_II-2017_drr/
+  149  cd src/
+  150  echo '#!/bin/bash' > monitor.sh
+  151  cat monitor.sh
+  152  history 
+  153  echo 'cd /usr/share/doc' >>monitor.sh
+  154  echo 'echo Reporte:' >>monitor.sh
+  155  echo 'echo Reporte: >> /tmp/reporte' >>monitor.sh
+  156  echo 'date >> /tmp/reporte' >> monitor.sh
+  157  echo 'pwq >> /tmp/reporte' >> monitor.sh
+  158  echo 'du -sh . >> /tmp/reporte' >> monitor.sh
+  159  rm /tmp/reporte 
+  160  vim monitor.sh 
+  161  chmod u+x monitor.sh 
+  162  ls -l
+  163  ls /tmp/
+  164  ./monitor.sh 
+  165  ls /tmp/
+  166  vim monitor.sh 
+  167  git status 
+  168  git add monitor.sh 
+  169  git status 
+  170  git commit -m "Creacion del script de monitoreo"
+  171  git push origin master 
+  172  vim monitor.sh 
+  173  git status 
+  174  git add monitor.sh 
+  175  git status 
+  176  git commit -m "Modificacion del script de monitoreo"
+  177  git push origin master 
+  178  vim monitor.sh 
+  179  vim tutor
+  180  rm tutor 
+  181  vimtutor
+  182  vim monitor.sh 
+  183  cp monitor.sh monitor2.sh .
+  184  man cp
+  185  cp monitor.sh monitor2.sh
+  186  ls
+  187  vim monitor2.sh 
+  188  rm /tmp/reporte 
+  189  ./monitor2.sh 
+  190  cat /tmp/reporte 
+  191  vim monitor2.sh 
+  192  git status 
+  193  git diff
+  194  git diff monitor
+  195  git diff monitor2.sh
+  196  git diff monitor.sh
+  197  vim monitor2.sh 
+  198  git status 
+  199  vim monitor2.sh 
+  200  cp monitor2.sh monitor.sh
+  201  ls
+  202  cat monitor.sh
+  203  rm monitor.sh!
+  204  ls
+  205  git status 
+  206  git diff monitor.sh
+  207  git add monitor.sh 
+  208  git commit 
+  209  git status 
+  210  git commit 
+  211  git commit -m "Modificacion ruda"
+  212  git push -u origin master 
+  213  ls -l /etc/alternatives//editor
+  214  git log
+  215  git commit 
+  216  history 
+  217  git diff monitor.sh
+  218  vim monitor.sh
+  219  git diff monitor.sh
+  220  git commit 
+  221  git add monitor.sh 
+  222  git commit 
+  223  vim monitor.sh
+  224  ll
+  225  ./monitor.sh 
+  226  cat /tmp/reporte 
+  227  git diff monitor.sh
+  228  git add monitor.sh 
+  229  git commit -m "Mejora no se cual numero"
+  230  git push -u origin master 
+  231  vim monitor.sh
+  232  test casa=perro
+  233  echo $?
+  234  test "casa"="perro"
+  235  echo $?
+  236  test casa==perro
+  237  echo $?
+  238  man test
+  239  test casa=perro
+  240  echo $?
+  241  test casa!=perro
+  242  echo $?
+  243  test casa = perro
+  244  echo $?
+  245  test casa != perro
+  246  echo $?
+  247  test casa = perro
+  248  echo $?
+  249  test casa = casa
+  250  echo $?
+  251  cd
+  252  echo "USER
+  253  q
+  254  exirt
+  255  exit
+  256  end
+  257  echo $USER
+  258  if [ $USER = 'estudiante' ]; then        echo 'El usuario puede continuar'; fi
+  259  if [ $USER = 'estudian' ]; then        echo 'El usuario puede continuar'; fi
+  260  cd Documents/
+  261  cd LXS2_II-2017_drr/
+  262  cd src/
+  263  vim parametros.sh
+  264  ls
+  265  chmod u+x parametros.sh 
+  266  ./parametros.sh 
+  267  ./parametros.sh j jn j
+  268  git add parametros.sh 
+  269  git commit -m "Inicio de script de parametros"
+  270  git push -u origin master 
+  271  vim parametros.sh
+  272  ./parametros.sh perro j j
+  273  ./parametros.sh per j j
+  274  vim parametros.sh
+  275  git status 
+  276  git add parametros.sh 
+  277  git commit -m "Version 2 del if"
+  278  git push -u origin master 
+  279  lsb_release 
+  280  lsb_release -a
+  281  lsb_release -a | awk '{print $2}'
+  282  lsb_release -r | awk '{print $2}'
+  283  history
+  284  cd Documents/
+  285  cd LXS2_II-2017_drr/
+  286  cd his
+  287  ls
+  288  cd History/
+  289  ls
+  290  rm history-20170318_1107.log 
+  291  rm history-20170318.log 
+  292  ls
+  293  history > history-clase1
