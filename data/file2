@@ -1,0 +1,62 @@
+    1  apt-cache search chrome
+    2  apt-cache search google'chrome
+    3  apt-cache search google-chrome
+    4  apt-cache search googlechrome
+    5  apt-cache search google}
+    6  apt-cache search google
+    7  apt-cache search virtualbox
+    8  cd Downloads/
+    9  ls
+   10  su - soporte
+   11  type git
+   12  ls
+   13  cd Documents/
+   14  mkdir LXS2_II-2017_drr
+   15  ls
+   16  cd LXS2_II-2017_drr/
+   17  git init
+   18  tree
+   19  tree -a
+   20  sudo - root
+   21  su - soporte
+   22  tree
+   23  tree -a
+   24  ls -la
+   25  git config --global user.name "Diego Retana"
+   26  git config --global user.email "ludireta@hotmail.com"
+   27  vim 
+   28  vim ~/.gitconfig 
+   29  vim .gitignore
+   30  mkdir src
+   31  mkdir misc
+   32  mkdir logs
+   33  mkdir data
+   34  tree -a
+   35  touch {misc,src,logs}/file1
+   36  tree -a
+   37  git status 
+   38  touch data/file1
+   39  tree
+   40  git add --all
+   41  git s
+   42  git status 
+   43  git commit -m "Inicio del repo"
+   44  git status 
+   45  touch data/file2
+   46  git status 
+   47  last
+   48  last > misc/ultimo-acceso.log
+   49  head dmesg >> data/file1
+   50  dmesg | head >> data/file1
+   51  ls /data
+   52  ls data/
+   53  git status 
+   54  git add data/file1
+   55  git add data/file2
+   56  git status 
+   57  git commit -m "2 nuevos achivos"
+   58  git log
+   59  git remote add origin https://github.com/diegor12/LXS2_II-2017_drr.git
+   60  git remote -v
+   61  git push -u origin master
+   62  history > data/file2
