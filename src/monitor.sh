@@ -2,9 +2,9 @@
 
 #Programa de documentacion
 
-#read -p "Ingrese la ruta a respaldar: " dir
-echo "Ingrese la ruta a respaldar: "
-read dir
+
+
+read -p "Ingrese la ruta a respaldar: " dir
 
 echo "Reporte:" >> /tmp/reporte
 date >> /tmp/reporte
